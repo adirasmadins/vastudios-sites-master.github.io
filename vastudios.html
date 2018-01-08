@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head> 
+ <style type="text/css">
+
+h1, h3       { text-align: center;
+
+font-family: tahoma, geneva, sans-serif }
+
+p            { margin-left: 5%;
+
+margin-right: 5%;
+
+font-family: arial, helvetica, sans-serif }
+
+ul           { margin-left: 10% }
+a            { text-decoration: none }
+
+a:hover      { text-decoration: underline }
+
+.nav         { width: 100%;
+
+border-top: 3px dashed blue;
+
+padding-top: 10px }
+
+.highlighted { background-color: yellow }
+
+.submit      { width: 120px }
+	
+
+
+
+ </style>      
+<script type="text/javascript"> 
+function allowReset() { 
+    return window.confirm("Go ahead and clear the form?"); 
+} 
+function allowSend() { 
+    return window.confirm("Go ahead and mail this info?"); 
+} 
+</script> 
+<meta charset="UTF-8">
+<title>VA Studios</title>
+
+</head>
+
+<body>
+
+
+
+<a href="file:///Users/adirasmadin/Library/Mobile%20Documents/com~apple~CloudDocs/vastudios-sites-master/VA%20Studio02.png" target="_top"><img src="file:///Users/adirasmadin/Library/Mobile%20Documents/com~apple~CloudDocs/Uploads/VA%20Studio02.png" aria-id="img_7901585d" alt="" title=""></a>
+
+<button onclick="myFunction(event)">CLICK ME</button>
+
+<p id="clickme"><h3>WELCOME TO VOXEL STUDIOS ANIMATION</h3></p>
+<form method="POST" enctype="text/plain" action="mailto:vastudios@gmail.com" onreset="return allowReset()" onsubmit="return allowSend()"> 
+
+Enter your first name:
+<input type="text" name="firstName" id="firstName"> 
+Enter your last name:
+<input type="text" name="lastName" id="lastName">
+Enter your address:
+<input type="text" name="address" id="address">
+Enter your city:
+<input type="text" name="city" id="city">
+<input type="radio" name="gender" id="gender1" checked="checked">
+Male 
+<input type="radio" name="gender" id="gender2">Female
+<input type="checkbox" name="retired" id="retired">I am retired
+<input type="reset"> 
+<input type="submit">
+</form> 
+<script>
+function myFunction(event) { 
+    var x = event.bubbles;
+    document.getElementById("clickme").innerHTML = "<h3>WELCOME TO VOXEL STUDIOS ANIMATION</h3>";
+}
+</script>
+
+
+
+
+
+</body>
+</html>
